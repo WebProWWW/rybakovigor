@@ -8,6 +8,7 @@
 /**
  * @var $this \yii\web\View
  */
+$this->title = ' - Контакты';
 ?>
 <div class="block my-auto">
     <div class="container">

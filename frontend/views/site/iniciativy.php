@@ -8,6 +8,7 @@
 /**
  * @var $this \yii\web\View
  */
+$this->title = ' - Инициативы';
 ?>
 <div class="pt-15 pb-30">
     <div class="container">

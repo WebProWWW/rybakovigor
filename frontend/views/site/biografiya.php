@@ -7,6 +7,7 @@
 /**
  * @var $this \yii\web\View
  */
+$this->title = ' - Биография';
 ?>
 <div class="block">
     <div class="container">

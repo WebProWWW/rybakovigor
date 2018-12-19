@@ -8,6 +8,7 @@
 /**
  * @var $this \yii\web\View
  */
+$this->title = ' - Магазин';
 ?>
 <div class="block">
     <div class="container">

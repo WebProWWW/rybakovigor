@@ -12,7 +12,7 @@
 
 use yii\helpers\Url;
 
-$this->title = $name;
+$this->title = ' - 404';
 ?>
 
 <div class="container d-flex flex-grow-1">

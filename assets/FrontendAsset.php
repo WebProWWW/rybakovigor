@@ -27,5 +27,6 @@ class FrontendAsset extends AssetBundle
         JQuerryAsset::class,
         OwlCarousel::class,
         TwbsGridAsset::class,
+        FancyboxAsset::class,
     ];
 }

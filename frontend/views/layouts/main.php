@@ -24,7 +24,7 @@ $baseUrl = Url::base(true);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
-    <title><?= Html::encode($this->title) ?></title>
+    <title>Рыбаков Игорь<?= Html::encode($this->title) ?></title>
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="date=no">
     <meta name="format-detection" content="address=no">
