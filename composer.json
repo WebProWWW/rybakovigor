@@ -1,0 +1,64 @@
+{
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "twbs/bootstrap": "4.1.3",
+        "fortawesome/font-awesome": "5.6.1",
+        "fancyapps/fancybox": "3.5.6",
+        "jquery/jquery": "3.3.1",
+        "OwlCarousel2/OwlCarousel2": "2.3.4"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "fortawesome/font-awesome",
+                "version": "5.6.1",
+                "dist": {
+                    "url": "https://codeload.github.com/fortawesome/font-awesome/zip/5.6.1",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "fancyapps/fancybox",
+                "version": "3.5.6",
+                "dist": {
+                    "url": "https://codeload.github.com/fancyapps/fancybox/zip/v3.5.6",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/jquery",
+                "version": "3.3.1",
+                "dist": {
+                    "url": "https://codeload.github.com/jquery/jquery/zip/3.3.1",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "OwlCarousel2/OwlCarousel2",
+                "version": "2.3.4",
+                "dist": {
+                    "url": "https://codeload.github.com/OwlCarousel2/OwlCarousel2/zip/2.3.4",
+                    "type": "zip"
+                }
+            }
+        }
+    ]
+}

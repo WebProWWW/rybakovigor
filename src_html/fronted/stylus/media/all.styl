@@ -1,1 +1,445 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+colorOrange = #ff6500
+
+trans(atime=180)
+    transAll(atime)
+
+
+html, body
+    height 100%
+
+body
+    font-family 'Roboto', sans-serif
+    font-size 14px
+    &.fancybox-active
+        height 100%
+
+a
+    resetLn(colorOrange, black)
+    trans()
+
+
+i
+    vertical-align middle
+    line-height 1
+
+
+
+.content
+    mpd(0, 65px 0 0, flex)
+    flex-direction column
+    min-height 100%
+    position relative
+    // b(2, red)
+
+.block
+    mpd(0, 5px 0 20px)
+
+.divider
+    mpd(15px 0 0)
+    height 1px
+    background #DCDCDC
+
+.col-divider
+    mpd(0 15px)
+    width 2px
+    background colorOrange
+
+.header
+    mpd()
+    position fixed
+    top 0px
+    left 0px
+    right 0px
+    background white
+    z-index 100
+
+
+.nav
+    mpd(0 -5px 0, 0, flex)
+    justify-content space-between
+    flex-wrap wrap
+    &-ln
+        mpd(15px 5px 0, 0)
+        resetLn(black, colorOrange)
+        font-size 14px
+        line-height 1
+        &.active
+            color colorOrange
+    &-toggle
+        mpd(15px 0 0)
+        resetLn(black, colorOrange)
+        font-size 26px
+    &m
+        mpd(15px 0 0)
+        &-ln
+            mpd(15px 0 0)
+            resetLn(black, colorOrange)
+            text-align center
+            font-size 16px
+            line-height 1
+            &.active
+                color colorOrange
+
+
+.snav-ln
+    mpd(15px 0 0, 0 0 3px, inline-block)
+    border-bottom 0.1em dotted
+    &.active
+        resetLn(black, black)
+        font-weight 700
+
+
+.soc
+    mpd(5px -5px 0, 0, flex)
+    flex-wrap wrap
+    justify-content center
+    &-ln
+        mpd(10px 5px 0)
+        resetLn(black, colorOrange)
+        trans()
+        font-size 22px
+
+
+.collapse
+    display none
+
+
+.btn
+    mpd(15px 0 0, 15px)
+    trans()
+    box-sizing border-box
+    width 100%
+    text-align center
+    outline none
+    appearance none
+    background transparent
+    border none
+    border-radius 0
+    line-height 1
+    &-torange
+        resetLn(white, white)
+        b(2, colorOrange)
+        font-weight 400
+        letter-spacing 0.2em
+        &:hover
+            background colorOrange
+            text-shadow none
+    &-orange
+        resetLn(white, white)
+        background colorOrange
+        font-weight 400
+        // letter-spacing 0.1em
+        &:hover
+            background darken(colorOrange, 18%)
+    &-white
+        resetLn(black, white)
+        b(1, #E9E9E9)
+        background white
+        &:hover
+            background colorOrange
+            i
+                color white
+
+
+.page-title
+    mpd(15px 0 0)
+    line-height 1
+    font-family 'Oswald', sans-serif
+    font-weight 500
+
+.text
+    mpd(15px 0 0)
+    line-height 1.2
+    font-size 1em
+    font-weight 400
+
+
+.v-middle
+    vertical-align middle
+
+.htitle
+    mpd(15px 0 0)
+    line-height 1
+    font-family 'Oswald', sans-serif
+    font-weight 500
+
+
+.pslider
+    &-wrap
+        mpd(15px 0 0)
+        position relative
+        //.bx-wrapper
+        //    margin 0
+        //    padding 0
+        //    border none
+        //    box-shadow none
+        //    background transparent
+    .owl-prev, .owl-next
+        mpd(-50px 0 0, 0, flex)
+        trans()
+        box-sizing border-box
+        justify-content center
+        align-items center
+        position absolute
+        top 50%
+        width 80px
+        height @width
+        border-radius 50%
+        background white
+        box-shadow 0 0 43px 0 #b7b7b7
+        color colorOrange
+        font-size 28px
+        &.disabled
+            opacity 0
+        &:hover
+            color white
+            background colorOrange
+    .owl-prev
+        left 5px
+    .owl-next
+        right 5px
+    &.owl-carousel .owl-item img
+      mpd(0 auto)
+      width auto
+      max-width 100%
+    //&-img
+    //
+    //    max-width 100%
+    //    height auto
+
+
+.fslider
+    .owl-stage-outer
+        height 100%
+    .owl-stage
+        height 100%
+    .owl-item
+        height 100%
+    .owl-prev, .owl-next
+        trans()
+        display flex
+        align-items center
+        position absolute
+        margin-top -80px
+        top 50%
+        width 100px
+        height @width
+        border-radius 50%
+        background alpha(black, 90%)
+        color white
+        font-size 28px
+        &.disabled
+            opacity 0
+        &:hover
+            color colorOrange
+    .owl-prev
+        left -65px
+        justify-content flex-end
+        padding-right 15px
+        &:hover
+            left -58px
+    .owl-next
+        right -65px
+        justify-content flex-start
+        padding-left 15px
+        &:hover
+            right -58px
+    &-img
+        trans(400)
+        position absolute
+        bottom 0px
+        left 0px
+        width 600px !important
+        height @width !important
+        opacity 0
+    &-cont
+        mpd(0, 40px 50px, flex)
+        trans(400)
+        b(1, alpha(colorOrange, 10%))
+        flex-direction column
+        position relative
+        z-index 1
+        height 100%
+        // position absolute
+        // top -1px
+        // left -1px
+        // right -1px
+        // bottom -1px
+        // overflow hidden
+        background alpha(colorOrange, 70%)
+        color white
+        text-shadow 0 0 10px colorOrange
+        opacity 0
+    &-item
+        mpd()
+        trans(400)
+        b(1, #E2E2E2)
+        border-left none
+        box-sizing border-box
+        position relative
+        height 100%
+        min-height 530px
+        &:hover
+            // b(1, alpha(colorOrange, 70%))
+            b(1, transparent)
+            border-left none
+            .fslider-img
+                opacity 1
+                left 70px
+            .fslider-cont
+                opacity 1
+            .fslider-center
+                left -50px
+                opacity 0
+    &-center
+        mpd(-80px 0 0)
+        trans()
+        position absolute
+        top 50%
+        left 0
+        right 0
+    &-btn
+        mpd(15px auto 0, 0, flex)
+        b(1, #E2E2E2)
+        trans()
+        justify-content center
+        align-items center
+        width 60px
+        height @width
+        border-radius 50%
+        font-size 1.3em
+        cursor pointer
+        user-select none
+        &:hover
+            b(1, colorOrange)
+            background colorOrange
+            color white
+
+
+
+
+
+.input
+    mpd(15px 0 0, 13px)
+    box-sizing border-box
+    width 100%
+    border 2px solid colorOrange
+    border-radius 1px
+    background white
+    font-family 'Oswald', sans-serif
+    font-weight 500
+    font-size 1.1em
+    appearance none
+    outline none
+
+
+
+.overlay
+    position relative
+    height 100%
+    overflow hidden
+    cursor pointer
+    user-select none
+    &-hidden
+        margin-left -15px
+        margin-right 15px
+        trans(400)
+        opacity 0
+    &-content
+        mpd(0, 25px 30px 20px, flex)
+        trans()
+        flex-direction column
+        height 100%
+        background alpha(black, 70%)
+        &:hover
+            background alpha(colorOrange, 96%)
+            .overlay-hidden
+                margin-left 0px
+                margin-right 0px
+                opacity 1
+
+
+.bg-pro
+    background-position 50% 50%
+    background-repeat no-repeat
+    background-size cover
+    min-height 300px
+
+
+
+.f
+    &-oswald
+        font-family 'Oswald', sans-serif
+    &-roboto
+        font-family 'Roboto', sans-serif
+
+
+.bb-dashed
+    border-bottom 0.1em dotted
+    // border-style dotted
+    // border-width 0.1em
+    // background-color initial
+
+.quote
+    background url('../img/quote.svg') no-repeat
+    background-size 5.8em auto
+
+
+.tshadow
+    text-shadow 0 0 23px black
+
+
+.orange
+    color colorOrange
+.white
+    color white
+.gray
+    color #7d7d7d
+
+
+.tbg-orange
+    background-color colorOrange
+    color white
+    padding 0.1em 0.3em
+
+
+.border-24
+    border 15px solid colorOrange
+
+.modal
+    max-width 1000px
+
+.flow-hidden
+    overflow hidden
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.bg-logo
+    background white url('../img/bg-logo.jpg') 50% 50% no-repeat
+    background-size contain
+
+.bg-a
+    background #272629 url('../img/bg-1.jpg') 50% 0% no-repeat
+    background-size cover
+    min-height 300px
+
+.img-a
+    mpd(0 auto -40px)
+    max-width 100%
+
+.img-b
+    mpd(15px auto -35px)
+    max-width 100%
+
+.re
+    &-img
+        mpd(15px 0 0)
+        max-width 100%
+        b(1, #E6E6E6)
+        border-radius 50%
+
+
+
+
