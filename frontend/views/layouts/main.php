@@ -69,8 +69,7 @@ function active($alias, $current)
                     <a class="nav-ln<?= active('biografiya', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'biografiya']) ?>">Биография</a>
                     <a class="nav-ln<?= active('iniciativy', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'iniciativy']) ?>">Инициативы</a>
                     <a class="nav-ln<?= active('venchurnyy-fond', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'venchurnyy-fond']) ?>">Венчурный Фонд</a>
-                    <a class="nav-ln<?= active('magazin', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'magazin']) ?>">Магазин</a>
-                    <a class="nav-ln<?= active('knigi', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'knigi']) ?>">Книги</a>
+                    <a class="nav-ln<?= active('magazin', $cAlias) ?>" href="<?= Url::to(['site/catalog', 'parent'=>'magazin', 'alias'=>'index']) ?>">Магазин</a>
                     <a class="nav-ln<?= active('kontakty', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'kontakty']) ?>">Контакты</a>
                 </nav>
             </div>
@@ -89,8 +88,7 @@ function active($alias, $current)
                 <a class="navm-ln<?= active('biografiya', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'biografiya']) ?>">Биография</a>
                 <a class="navm-ln<?= active('iniciativy', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'iniciativy']) ?>">Инициативы</a>
                 <a class="navm-ln<?= active('venchurnyy-fond', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'venchurnyy-fond']) ?>">Венчурный Фонд</a>
-                <a class="navm-ln<?= active('magazin', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'magazin']) ?>">Магазин</a>
-                <a class="navm-ln<?= active('knigi', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'knigi']) ?>">Книги</a>
+                <a class="navm-ln<?= active('magazin', $cAlias) ?>" href="<?= Url::to(['site/catalog', 'parent'=>'magazin', 'alias'=>'index']) ?>">Магазин</a>
                 <a class="navm-ln<?= active('kontakty', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'kontakty']) ?>">Контакты</a>
             </nav>
         </div>

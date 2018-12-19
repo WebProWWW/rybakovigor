@@ -5,6 +5,8 @@
  * 2018-12-19 15:55
  */
 
+use frontend\widgets\SocWidget;
+
 /**
  * @var $this \yii\web\View
  */
@@ -41,7 +43,7 @@ $this->params['alias'] = 'kontakty';
                 <div class="block">
                     <p class="text f-oswald em-18 fw-500 text-center text-xl-left">Я В СОЦИАЛЬНЫХ СЕТЯХ</p>
                     <div class="soc-large">
-                        <?= $this->render('-soc') ?>
+                        <?= SocWidget::widget(['data'=>$socArr]) ?>
                     </div>
                     <img class="d-none d-lg-block mt-15 w-50 ml-auto" src="/img/avt.png">
                 </div><!-- .block -->

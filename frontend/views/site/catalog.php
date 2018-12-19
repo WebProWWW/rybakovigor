@@ -5,30 +5,31 @@
  * 2018-12-19 15:46
  */
 
-/**
- * @var $this \yii\web\View
- */
+use yii\helpers\Url;
+use frontend\widgets\SocWidget;
+use frontend\widgets\SubNavWidget;
+
+/* @var $this \yii\web\View */
+/* @var $socArr \frontend\models\Social[] */
+/* @var $catArr \frontend\models\Category[] */
+/* @var $catAlias string */
+/* @var $parent string */
+
+
 $this->title = ' - Магазин';
-$this->params['alias'] = 'magazin';
+$this->params['alias'] = $parent;
 ?>
 <div class="block">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-xl-7 order-2 order-xl-1">
                 <div class="block">
-                    <div class="row em-10 em-md-12">
-                        <div class="col-auto"><a class="snav-ln" href="">Футболки</a></div>
-                        <div class="col-auto"><a class="snav-ln" href="">Толстовки</a></div>
-                        <div class="col-auto"><a class="snav-ln" href="">Книги</a></div>
-                        <div class="col-auto"><a class="snav-ln" href="">Постеры</a></div>
-                        <div class="col-auto"><a class="snav-ln" href="">Значки</a></div>
-                        <div class="col-auto"><a class="snav-ln" href="">Стикеры</a></div>
-                    </div><!-- .row -->
+                    <?= SubNavWidget::widget(['data'=>$catArr, 'parent'=>$parent, 'alias'=>$catAlias]) ?>
                 </div><!-- .block -->
             </div>
             <div class="col-auto ml-auto order-1 order-xl-2">
                 <div class="block">
-                    <?= $this->render('-soc') ?>
+                    <?= SocWidget::widget(['data'=>$socArr]) ?>
                 </div><!-- .block -->
             </div>
         </div><!-- .row -->

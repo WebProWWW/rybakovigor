@@ -4,6 +4,9 @@
  * Site: https://webprowww.github.io
  * 2018-12-19 15:33
  */
+
+use frontend\widgets\SocWidget;
+
 /**
  * @var $this \yii\web\View
  */
@@ -23,7 +26,7 @@ $this->params['alias'] = 'biografiya';
             </div><!-- .col -->
             <div class="col-auto ml-auto order-1 order-lg-2">
                 <div class="block">
-                    <?= $this->render('-soc') ?>
+                    <?= SocWidget::widget(['data'=>$socArr]) ?>
                 </div><!-- .block -->
             </div><!-- .col -->
         </div><!-- .row -->

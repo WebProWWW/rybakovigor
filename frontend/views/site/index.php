@@ -15,9 +15,8 @@ $this->params['alias'] = 'index';
         <div class="col-12 col-xl-6 mt-auto">
             <div class="block">
                 <h1 class="htitle em-35 em-sm-80">РЫБАКОВ<br>ИГОРЬ</h1>
-                <h2 class="text fw-300 em-15">
-                    Сооснователь компании «ТехноНИКОЛЬ»<br>
-                    и «Рыбаков Фонда»
+                <h2 class="text fw-300 em-13 em-sm-15">
+                    Сооснователь компаний «ТехноНИКОЛЬ», «Николь-Пак», «Рыбаков Фонд», Венчурный Фонд «LARIX» и сети смарт-офисов «SOK»
                 </h2>
             </div><!-- .col -->
             <div class="block">
@@ -42,7 +41,7 @@ $this->params['alias'] = 'index';
                      <span class="d-flex align-items-center">
                         <span class="d-block mr-20 f-oswald fw-500 em-34 orange">#84</span>
                         <span class="d-block fw-300">
-                           в рейтинг 200 богатейших<br>
+                           в рейтинге 200 богатейших<br>
                            бизнесменов по версии<br>
                            журнала Forbes
                         </span>
