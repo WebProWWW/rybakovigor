@@ -8,6 +8,7 @@
 /**
  * @var $this \yii\web\View
  */
+$this->params['alias'] = 'index';
 ?>
 <div class="container d-flex flex-grow-1">
     <div class="row">

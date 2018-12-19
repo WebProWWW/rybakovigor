@@ -65,7 +65,7 @@ function active($alias, $current)
             </div>
             <div class="col col-lg-9 d-none d-md-block">
                 <nav class="nav">
-                    <a class="nav-ln" href="<?= Url::home() ?>">Главная</a>
+                    <a class="nav-ln<?= active('index', $cAlias) ?>" href="<?= Url::home() ?>">Главная</a>
                     <a class="nav-ln<?= active('biografiya', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'biografiya']) ?>">Биография</a>
                     <a class="nav-ln<?= active('iniciativy', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'iniciativy']) ?>">Инициативы</a>
                     <a class="nav-ln<?= active('venchurnyy-fond', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'venchurnyy-fond']) ?>">Венчурный Фонд</a>
@@ -85,7 +85,7 @@ function active($alias, $current)
     <div class="collapse d-md-none" id="nav-mobile">
         <div class="container">
             <nav class="navm">
-                <a class="navm-ln" href="<?= Url::home() ?>">Главная</a>
+                <a class="navm-ln<?= active('index', $cAlias) ?>" href="<?= Url::home() ?>">Главная</a>
                 <a class="navm-ln<?= active('biografiya', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'biografiya']) ?>">Биография</a>
                 <a class="navm-ln<?= active('iniciativy', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'iniciativy']) ?>">Инициативы</a>
                 <a class="navm-ln<?= active('venchurnyy-fond', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'venchurnyy-fond']) ?>">Венчурный Фонд</a>
