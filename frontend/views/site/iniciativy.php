@@ -45,7 +45,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-1.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Открытая глобальная инициатива, направленная на максимизацию общественного блага с помощью технологий</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Philtech Initiative</span>
+                                <span class="d-block">Открытая глобальная инициатива, направленная на максимизацию общественного блага с помощью технологий</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="http://go.philtech.ru">
@@ -61,7 +64,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-2.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Всероссийская некоммерческая программа развития предпринимательства среди молодежи</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Преактум</span>
+                                <span class="d-block">Всероссийская некоммерческая программа развития предпринимательства среди молодежи</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="http://preactum.ru">
@@ -79,7 +85,10 @@ $this->params['alias'] = 'iniciativy';
             <div class="overlay-content white">
                 <img class="d-block w-25" src="/img/logo-pro-3.svg">
                 <div class="overlay-hidden mt-auto">
-                    <h3 class="text fw-300 em-12 lh-18">Женское сообщество, основанное на принципах сотрудничества и доверия</h3>
+                    <h3 class="text fw-300 em-12 lh-18">
+                        <span class="d-block em-11 fw-700">PRO Женщин</span>
+                        <span class="d-block">Женское сообщество, основанное на принципах сотрудничества и доверия</span>
+                    </h3>
                 </div><!-- .overlay-hidden -->
                 <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                     <a class="d-block" target="_blank" href="http://pro-women.ru">
@@ -97,7 +106,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-4.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Национальный ресурсный центр, возрождающий в России институт наставничества</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Ментори</span>
+                                <span class="d-block">Национальный ресурсный центр, возрождающий в России институт наставничества</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="https://mentori.ru">
@@ -113,7 +125,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-5.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Закрытый бизнес-клуб для предпринимателей, способных менять экономику и вдохновлять людей</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Эквиум</span>
+                                <span class="d-block">Закрытый бизнес-клуб для предпринимателей, способных менять экономику и вдохновлять людей</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="http://equium.club">
@@ -131,7 +146,10 @@ $this->params['alias'] = 'iniciativy';
             <div class="overlay-content white">
                 <img class="d-block w-25" src="/img/logo-pro-6.svg">
                 <div class="overlay-hidden mt-auto">
-                    <h3 class="text fw-300 em-12 lh-18">Идеи социальной инклюзии и инклюзивного образования</h3>
+                    <h3 class="text fw-300 em-12 lh-18">
+                        <span class="d-block em-11 fw-700">Равенство возможностей</span>
+                        <span class="d-block">Идеи социальной инклюзии и инклюзивного образования</span>
+                    </h3>
                 </div><!-- .overlay-hidden -->
                 <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                     <a class="d-block" target="_blank" href="https://ravniy.com">
@@ -149,7 +167,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-7.png">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Конкурс для предпринимателей, педагогов и учащихся</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Инновации в образовании</span>
+                                <span class="d-block">Конкурс для предпринимателей, педагогов и учащихся</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="http://kivo.hse.ru">
@@ -165,7 +186,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-8.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Создана для консолидации усилий педагогического, исследовательского и бизнес-сообществ</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Ассоциация НОТО</span>
+                                <span class="d-block">Создана для консолидации усилий педагогического, исследовательского и бизнес-сообществ</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="https://old.rybakovfond.ru/publications/2017/12/07/associaciya-nacionalnoe-obshhestvo-tehnologij-v-obrazovanii">
@@ -183,7 +207,10 @@ $this->params['alias'] = 'iniciativy';
             <div class="overlay-content white">
                 <img class="d-block w-25" src="/img/logo-pro-9.svg">
                 <div class="overlay-hidden mt-auto">
-                    <h3 class="text fw-300 em-12 lh-18">Программа поддержки и развития дошкольного образования</h3>
+                    <h3 class="text fw-300 em-12 lh-18">
+                        <span class="d-block em-11 fw-700">Университет детства</span>
+                        <span class="d-block">Программа поддержки и развития дошкольного образования</span>
+                    </h3>
                 </div><!-- .overlay-hidden -->
                 <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                     <a class="d-block" target="_blank" href="https://doshkolka.rybakovfond.ru">
@@ -201,7 +228,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-10.png">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Обмен педагогическим опытом в сфере дошкольного образования</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Конкурс им. Л.С. Выготского</span>
+                                <span class="d-block">Обмен педагогическим опытом в сфере дошкольного образования</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="https://konkurs.rybakovfond.ru">
@@ -217,7 +247,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-11.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Всероссийский конкурс для педагогов</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Конкурс #iУчитель</span>
+                                <span class="d-block">Всероссийский конкурс для педагогов</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="https://iteacher.rybakovfond.ru">
@@ -237,7 +270,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-12.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Всероссийский конкурс нацеленный на выявление и поддержку школьных проектов</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Конкурс #ТОПШкола</span>
+                                <span class="d-block">Всероссийский конкурс нацеленный на выявление и поддержку школьных проектов</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="https://topschool.rybakovfond.ru">
@@ -253,7 +289,10 @@ $this->params['alias'] = 'iniciativy';
                     <div class="overlay-content white">
                         <img class="d-block w-25" src="/img/logo-pro-13.svg">
                         <div class="overlay-hidden mt-auto">
-                            <h3 class="text fw-300 em-12 lh-18">Международная акция благодарности</h3>
+                            <h3 class="text fw-300 em-12 lh-18">
+                                <span class="d-block em-11 fw-700">Акция Благодарю</span>
+                                <span class="d-block">Международная акция благодарности</span>
+                            </h3>
                         </div><!-- .overlay-hidden -->
                         <div class="d-flex justify-content-end align-items-center mt-auto overlay-hidden">
                             <a class="d-block" target="_blank" href="http://blagodaru.ru">
