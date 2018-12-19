@@ -9,6 +9,7 @@
  * @var $this \yii\web\View
  */
 $this->title = ' - Инициативы';
+$this->params['alias'] = 'iniciativy';
 ?>
 <div class="pt-15 pb-30">
     <div class="container">

@@ -8,6 +8,7 @@
  * @var $this \yii\web\View
  */
 $this->title = ' - Биография';
+$this->params['alias'] = 'biografiya';
 ?>
 <div class="block">
     <div class="container">

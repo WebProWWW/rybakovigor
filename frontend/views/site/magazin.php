@@ -9,6 +9,7 @@
  * @var $this \yii\web\View
  */
 $this->title = ' - Магазин';
+$this->params['alias'] = 'magazin';
 ?>
 <div class="block">
     <div class="container">

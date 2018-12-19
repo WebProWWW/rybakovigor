@@ -9,6 +9,7 @@
  * @var $this \yii\web\View
  */
 $this->title = ' - Контакты';
+$this->params['alias'] = 'kontakty';
 ?>
 <div class="block my-auto">
     <div class="container">

@@ -9,6 +9,7 @@
  * @var $this \yii\web\View
  */
 $this->title = ' - Книги';
+$this->params['alias'] = 'knigi';
 ?>
 <div class="container d-flex flex-grow-1">
     <div class="row justify-content-center my-auto">

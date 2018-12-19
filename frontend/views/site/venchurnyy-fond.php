@@ -9,6 +9,7 @@
  * @var $this \yii\web\View
  */
 $this->title = ' - Венчурный Фонд';
+$this->params['alias'] = 'venchurnyy-fond';
 ?>
 <div class="block">
     <div class="container">
