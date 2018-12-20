@@ -909,11 +909,6 @@ i {
     background: #ff6500;
     border: 2px solid #ff6500;
   }
-  .pslider.owl-carousel .owl-item img {
-    margin: 0 auto 50px;
-    -webkit-box-shadow: 0 20px 30px 0 #cbcbcb;
-            box-shadow: 0 20px 30px 0 #cbcbcb;
-  }
 }
 /*
  * Medium devices (tablets, 768px and up)                        ≥ 768px

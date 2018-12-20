@@ -11,11 +11,17 @@ use yii\helpers\Url;
 /* @var $data \frontend\models\Category[] */
 /* @var $alias string */
 /* @var $parent string */
+
+//function active($aliasA, $aliasB)
+//{
+//    return ($aliasA === $aliasB) ? ' active' : '';
+//}
+
 ?>
 <div class="row em-10 em-md-12">
     <?php foreach ($data as $category): ?>
         <div class="col-auto">
-            <a class="snav-ln" href="<?= Url::to([
+            <a class="snav-ln<?= ($alias === $category->alias) ? ' active' : '' ?>" href="<?= Url::to([
                 'site/catalog',
                 'parent'=>$parent,
                 'alias'=>$category->alias,

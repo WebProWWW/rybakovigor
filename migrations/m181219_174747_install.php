@@ -31,6 +31,7 @@ class m181219_174747_install extends Migration
             'name' => $this->string()->notNull(),
             'desc' => $this->text(),
             'price' => $this->string(),
+            'img' => $this->string(),
         ], $this->options);
 
         $this->createIndex('idx-product-catid', 'product', 'catid');
@@ -97,13 +98,13 @@ class m181219_174747_install extends Migration
 
     public function insertData()
     {
-        $this->batchInsert('category', ['order','alias','name'], [
-            ['1','futbolki','Футболки'],
-            ['2','tolstovki','Толстовки'],
-            ['3','knigi','Книги'],
-            ['4','postery','Постеры'],
-            ['5','znachki','Значки'],
-            ['6','stikery','Стикеры '],
+        $this->batchInsert('category', ['id','order','alias','name'], [
+            ['1','1','futbolki','Футболки'],
+            ['2','2','tolstovki','Толстовки'],
+            ['3','3','knigi','Книги'],
+            ['4','4','postery','Постеры'],
+            ['5','5','znachki','Значки'],
+            ['6','6','stikery','Стикеры '],
         ]);
 
         $this->batchInsert('social', ['order','icon','url'], [
@@ -113,6 +114,30 @@ class m181219_174747_install extends Migration
             ['4','i-twitter','https://twitter.com/rybakovigor'],
             ['5','i-youtube','https://www.youtube.com/channel/UCdOUvNFp8y6KTkswzeu7naQ/featured'],
             ['6','i-telegram-plane','https://t-do.ru/rybakovigor'],
+        ]);
+
+        $this->batchInsert('product', ['catid','order','name','desc','price', 'img'], [
+            // футболки
+            ['1','1','Преобразующий вихрь','100% хлопок','1490','/img/product/2-1.png'],
+            ['1','2','Ошибайся лучше','100% хлопок','1490','/img/product/2-2.png'],
+            ['1','3','Цели за рамками возможностей','100% хлопок','1490','/img/product/2-3.png'],
+            ['1','4','Личная энергия бизнеса','100% хлопок','1490','/img/product/2-4.png'],
+            ['1','5','Что мы создаем','100% хлопок','1490','/img/product/2-5.png'],
+            ['1','6','Набор из 5 футболок','100% хлопок','6990','/img/product/2-6.png'],
+            // постеры
+            ['4','1','Постер "Fail Better"','','1890','/img/product/1-7.jpg'],
+            ['4','2','Постер "X10"','','1890','/img/product/1-6.jpg'],
+            ['4','3','Постер "Жажда" White','','1890','/img/product/1-5.jpg'],
+            ['4','4','Постер "Жажда" Black','','1890','/img/product/1-4.jpg'],
+            ['4','5','Постер Reality Hacker','','1890','/img/product/1-3.jpg'],
+            ['4','6','Постер "Повышай планку"','','1890','/img/product/1-2.jpg'],
+            ['4','7','Постер "Быстрая Рыба"','','1890','/img/product/1-1.jpg'],
+            
+            // ['','','','100% хлопок','/img/product/.jpg'],
+            // ['','','','100% хлопок','/img/product/.jpg'],
+            // ['','','','100% хлопок','/img/product/.jpg'],
+            // ['','','','100% хлопок','/img/product/.jpg'],
+            // ['','','','100% хлопок','/img/product/.jpg'],
         ]);
     }
 

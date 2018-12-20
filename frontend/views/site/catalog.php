@@ -5,7 +5,6 @@
  * 2018-12-19 15:46
  */
 
-use yii\helpers\Url;
 use frontend\widgets\SocWidget;
 use frontend\widgets\SubNavWidget;
 
@@ -14,6 +13,7 @@ use frontend\widgets\SubNavWidget;
 /* @var $catArr \frontend\models\Category[] */
 /* @var $catAlias string */
 /* @var $parent string */
+/* @var $category \frontend\models\Category */
 
 
 $this->title = ' - Магазин';
@@ -52,16 +52,10 @@ $this->params['alias'] = $parent;
             <div class="block bg-logo">
                 <div class="pslider-wrap">
                     <div class="owl-carousel pslider js-powl">
-                    <!--<div class="pslider js-bxslider">-->
-                        <div><img class="pslider-img" width="350" height="500" src="/img/product/1-1.jpg"></div>
-                        <div><img class="pslider-img" width="350" height="500" src="/img/product/1-2.jpg"></div>
-                        <div><img class="pslider-img" width="350" height="500" src="/img/product/1-3.jpg"></div>
-                        <div><img class="pslider-img" width="350" height="500" src="/img/product/1-4.jpg"></div>
-                        <div><img class="pslider-img" width="350" height="500" src="/img/product/1-5.jpg"></div>
-                        <div><img class="pslider-img" width="350" height="500" src="/img/product/1-6.jpg"></div>
-                        <div><img class="pslider-img" width="350" height="500" src="/img/product/1-7.jpg"></div>
-                    </div><!-- .js-bxslider -->
-                    <div class="pslider-btn em-13 js-bxslider-btn"></div>
+                        <?php foreach ($category->products as $product): ?>
+                            <div><img class="pslider-img" width="350" height="500" src="<?= $product->img ?>"></div>
+                        <?php endforeach; ?>
+                    </div><!-- .slider -->
                 </div><!-- .pslider-wrap -->
             </div><!-- .block -->
         </div><!-- .col -->

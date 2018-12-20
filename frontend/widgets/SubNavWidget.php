@@ -12,15 +12,9 @@ use yii\base\Widget;
 
 class SubNavWidget extends Widget
 {
-    public $data;
-    public $alias;
-    public $parent;
-
-    public function init()
-    {
-        parent::init();
-        if ($this->data === null) $this->data = [];
-    }
+    public $data = [];
+    public $alias = '';
+    public $parent = '';
 
     public function run()
     {

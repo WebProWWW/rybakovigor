@@ -67,4 +67,13 @@ class Category extends \yii\db\ActiveRecord
             return self::find()->orderBy('order')->all();
         });
     }
+
+    /**
+     * @param $alias string
+     * @return Category|null
+     */
+    public static function findByAlias($alias)
+    {
+        return self::findOne(['alias' => $alias]);
+    }
 }

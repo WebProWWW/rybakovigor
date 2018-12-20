@@ -41,6 +41,7 @@ class SiteController extends Controller
             'catAlias' => $alias,
             'parent' => $parent,
             'catArr' => Category::getAll(),
+            'category' => Category::findByAlias($alias),
         ]);
     }
 
