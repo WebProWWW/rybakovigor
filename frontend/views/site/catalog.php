@@ -21,18 +21,14 @@ $this->params['alias'] = $parent;
 ?>
 <div class="block">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-xl-7 order-2 order-xl-1">
-                <div class="block">
-                    <?= SubNavWidget::widget(['data'=>$catArr, 'parent'=>$parent, 'alias'=>$catAlias]) ?>
-                </div><!-- .block -->
-            </div>
-            <div class="col-auto ml-auto order-1 order-xl-2">
-                <div class="block">
+        <div class="block">
+            <div class="row justify-content-end">
+                <div class="col-auto">
                     <?= SocWidget::widget(['data'=>$socArr]) ?>
-                </div><!-- .block -->
-            </div>
-        </div><!-- .row -->
+                </div><!-- .col -->
+            </div><!-- .row-->
+        </div><!-- .block -->
+        <?= SubNavWidget::widget(['data'=>$catArr, 'parent'=>$parent, 'alias'=>$catAlias]) ?>
     </div><!-- .container -->
 </div><!-- .block -->
 
@@ -49,15 +45,13 @@ $this->params['alias'] = $parent;
             </div><!-- .block -->
         </div><!-- .col -->
         <div class="col-12 col-lg-8 col-xl-6">
-            <div class="block bg-logo">
-                <div class="pslider-wrap">
-                    <div class="owl-carousel pslider js-powl">
-                        <?php foreach ($category->products as $product): ?>
-                            <div><img class="pslider-img" width="350" height="500" src="<?= $product->img ?>"></div>
-                        <?php endforeach; ?>
-                    </div><!-- .slider -->
-                </div><!-- .pslider-wrap -->
-            </div><!-- .block -->
+            <div class="pslider-wrap">
+                <div class="owl-carousel pslider js-powl">
+                    <?php foreach ($category->products as $product): ?>
+                        <div><img class="pslider-img" width="600" height="600" src="<?= $product->img ?>"></div>
+                    <?php endforeach; ?>
+                </div><!-- .slider -->
+            </div><!-- .pslider-wrap -->
         </div><!-- .col -->
         <div class="col-12 col-xl-3">
             <div class="row">

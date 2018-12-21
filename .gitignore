@@ -3,3 +3,7 @@
 .idea
 /vendor
 /config
+/public_html/index.php
+/public_html/admin-panel/index.php
+*.sublime-project
+*.sublime-workspace

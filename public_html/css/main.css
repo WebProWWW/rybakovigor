@@ -567,16 +567,17 @@ i {
   background: #ff6500;
 }
 .pslider .owl-prev {
-  left: 5px;
+  left: -10px;
 }
 .pslider .owl-next {
-  right: 5px;
+  right: -10px;
 }
 .pslider.owl-carousel .owl-item img {
   display: block;
   margin: 0 auto;
   padding: 0;
   width: auto;
+  height: auto;
   max-width: 100%;
 }
 .fslider .owl-stage-outer {
