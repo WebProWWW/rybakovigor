@@ -38,13 +38,13 @@ $('.js-owl').owlCarousel
 $('.js-powl').owlCarousel
     dots: off
     navText: ['<i class="i-arr-l"></i>', '<i class="i-arr-r"></i>']
-    nav: off
+    nav: on
     navElement: 'div'
     items: 1
-    loop: on
-    responsive:
-        576:
-            nav: on
+    loop: off
+    # responsive:
+    #     576:
+    #         nav: on
 
 
 #$('.js-bxslider').bxSlider

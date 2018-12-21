@@ -55,16 +55,15 @@
   $('.js-powl').owlCarousel({
     dots: false,
     navText: ['<i class="i-arr-l"></i>', '<i class="i-arr-r"></i>'],
-    nav: false,
+    nav: true,
     navElement: 'div',
     items: 1,
-    loop: true,
-    responsive: {
-      576: {
-        nav: true
-      }
-    }
+    loop: false
   });
+
+  // responsive:
+  //     576:
+  //         nav: on
 
   //$('.js-bxslider').bxSlider
   //    pager: off
