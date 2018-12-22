@@ -33,7 +33,9 @@ $(cartStor).on CartStorage.EVENT_UPDATE, (e) -> updateCart cartStor
 
 # TEST ONLY
 $cart.on 'click', (e) ->
+    e.preventDefault()
     cartStor.clearProducts()
+    off
 
 $('.js-bybtn').on 'click', (e) ->
     e.preventDefault()

@@ -176,7 +176,9 @@
 
   // TEST ONLY
   $cart.on('click', function(e) {
-    return cartStor.clearProducts();
+    e.preventDefault();
+    cartStor.clearProducts();
+    return false;
   });
 
   $('.js-bybtn').on('click', function(e) {

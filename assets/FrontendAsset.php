@@ -21,7 +21,7 @@ class FrontendAsset extends AssetBundle
         'css/main.css?v=018',
     ];
     public $js = [
-        'js/main.js?v=014',
+        'js/main.js?v=015',
     ];
     public $depends = [
         JQuerryAsset::class,
