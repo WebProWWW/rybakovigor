@@ -1,4 +1,11 @@
-#=include ./lib/MyClass.coffee
+#=include ./lib/CartStorage.coffee
+
+$cart = $ '.js-cart'
+$cartTo = $ '.js-cart-to'
+cartAnimating = off
+cartStor = new CartStorage
+
+delay = (t, f) -> setTimeout f, t
 
 collapse = (e) ->
     e.preventDefault()
@@ -8,11 +15,57 @@ collapse = (e) ->
         $(href).slideToggle()
     off
 
+updateCart = (store) ->
+    count = store.getCount()
+    if count
+        $cart.find('.js-cart-count').text count
+        $cart.addClass 'active'
+    else
+        $cart.removeClass 'active'
+        $cart.find('.js-cart-count').text ''
+
 $('.js-collapse').on 'click', collapse
 
+
+updateCart cartStor
+$(cartStor).on CartStorage.EVENT_UPDATE, (e) -> updateCart cartStor
+
+
+# TEST ONLY
+$cart.on 'click', (e) ->
+    cartStor.clearProducts()
+
+$('.js-bybtn').on 'click', (e) ->
+    e.preventDefault()
+    return off if cartAnimating
+    cartAnimating = on
+    pId = Number $(this).attr 'product-id'
+    offsetCart = $cart.offset()
+    offsetBtn = $(this).offset()
+    $cartTo.css
+        'top' : e.pageY - 65
+        'left': e.pageX - 65
+        'visibility': 'visible'
+    .animate {
+        top : offsetCart.top
+        left: offsetCart.left
+        fontSize: 20
+        opacity: 0.6
+    }, 500, (e) ->
+        $cartTo.attr 'style', ''
+        $cart.addClass 'animate'
+        delay 300, ->
+            $cart.removeClass 'animate'
+            cartAnimating = off
+            newProduct =
+                id: pId
+                count: 1
+                size: 1
+            cartStor.addProduct newProduct
+    off
+
+
 $('.js-owl').owlCarousel
-    # slideBy: 'page'
-    # loop: on
     dots: off
     nav: off
     navElement: 'div'
@@ -33,7 +86,7 @@ $('.js-owl').owlCarousel
         1450:
             items: 4
             nav: on
-# 1500:
+        # 1500:
 
 $('.js-powl').owlCarousel
     dots: off
@@ -42,23 +95,10 @@ $('.js-powl').owlCarousel
     navElement: 'div'
     items: 1
     loop: off
-    # responsive:
-    #     576:
-    #         nav: on
 .on 'changed.owl.carousel', (e) ->
     $currentData = $ "#pslider-data-#{e.item.index}"
     $('.js-pslider-data').addClass 'd-none'
     $currentData.removeClass 'd-none'
-
-
-#$('.js-bxslider').bxSlider
-#    pager: off
-#    touchEnabled: off
-#    slideMargin: 100
-#    nextText: ''
-#    prevText: ''
-#    nextSelector: '.js-bxslider-btn'
-#    prevSelector: '.js-bxslider-btn'
 
 
 # $.fancybox.open src:'#review'

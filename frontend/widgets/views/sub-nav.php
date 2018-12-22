@@ -18,7 +18,7 @@ use yii\helpers\Url;
 //}
 
 ?>
-<div class="row em-10 em-md-12">
+<div class="row em-md-11">
     <?php foreach ($data as $category): ?>
         <div class="col-auto">
             <a class="snav-ln<?= ($alias === $category->alias) ? ' active' : '' ?>" href="<?= Url::to([

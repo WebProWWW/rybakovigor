@@ -880,6 +880,119 @@ table tbody tr:last-child th {
   border: 1px solid #e6e6e6;
   border-radius: 50%;
 }
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0 0;
+  padding: 0;
+  border: none;
+  position: relative;
+  font-size: 28px;
+}
+.cart,
+.cart:active,
+.cart:focus {
+  color: #ff6500;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+.cart:hover {
+  text-decoration: none;
+  outline: none;
+  color: #ff6500;
+}
+.cart-count {
+  display: block;
+  margin: -5px 0 0 -8px;
+  padding: 2px 0 0;
+  border: none;
+  border: 2px solid #ff6500;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background: #ff6500;
+  border-radius: 50%;
+  line-height: 1;
+  font-size: 11px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  visibility: hidden;
+}
+.cart-count,
+.cart-count:active,
+.cart-count:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+.cart-count:hover {
+  text-decoration: none;
+  outline: none;
+  color: whie;
+}
+.cart-to {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 100;
+  color: #ff6500;
+  font-size: 130px;
+  visibility: hidden;
+}
+.cart.active .cart-count {
+  visibility: visible;
+}
+.cart.animate {
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 /*
  * Small devices (phones, 576px and up)                          ≥ 576px
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */

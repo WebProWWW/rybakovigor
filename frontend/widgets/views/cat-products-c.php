@@ -43,7 +43,7 @@ use yii\helpers\Html;
     <div class="col-12 col-md-6 col-xl-12 ml-auto">
         <div class="pb-xl-15">
             <p class="text d-none d-md-block d-xl-none">&nbsp;</p>
-            <a class="btn btn-orange f-oswald em-13" href="">
+            <a class="btn btn-orange f-oswald em-13 js-bybtn" product-id="<?= $product->id ?>" href="">
                 <i class="i-cart em-13 mr-10"></i> КУПИТЬ
             </a>
         </div><!-- .block -->

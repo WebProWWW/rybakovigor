@@ -57,13 +57,13 @@ function active($alias, $current)
 
 <header class="header">
     <div class="container">
-        <div class="row justify-content-between align-items-center">
+        <div class="row align-items-center">
             <div class="col-auto">
                 <a href="<?= Url::home() ?>">
                     <img class="d-block mt-15" height="32" src="/img/logo.svg">
                 </a>
             </div>
-            <div class="col col-lg-9 d-none d-md-block">
+            <div class="col-md col-lg-9 col-xl-8 ml-auto d-none d-md-block">
                 <nav class="nav">
                     <a class="nav-ln<?= active('index', $cAlias) ?>" href="<?= Url::home() ?>">Главная</a>
                     <a class="nav-ln<?= active('biografiya', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'biografiya']) ?>">Биография</a>
@@ -73,6 +73,15 @@ function active($alias, $current)
                     <a class="nav-ln<?= active('kontakty', $cAlias) ?>" href="<?= Url::to(['site/index', 'view'=>'kontakty']) ?>">Контакты</a>
                 </nav>
             </div>
+            <div class="col-auto ml-auto ml-md-0">
+                <!--
+                <a class="cart js-cart js-prevent" data-fancybox data-options="{'modal':true}" href="#cart-list">
+                -->
+                <a class="cart js-cart" href="#cart-list">
+                    <i class="i-cart-a"></i>
+                    <span class="cart-count js-cart-count"></span>
+                </a>
+            </div><!-- .col -->
             <div class="col-auto d-md-none">
                 <a class="nav-toggle js-collapse" href="#nav-mobile"><i class="i-bars"></i></a>
             </div>
@@ -99,7 +108,7 @@ function active($alias, $current)
 <section class="content">
 
     <?= $content ?>
-
+    <i class="i-gift cart-to js-cart-to"></i>
 </section><!-- .content -->
 
 <!-- MODALS -->
@@ -183,6 +192,9 @@ function active($alias, $current)
                 </div><!-- .block -->
             </div><!-- .col -->
         </div><!-- .row -->
+    </div><!-- .modal -->
+
+    <div class="modal js-cart-list" id="cart-list">
     </div><!-- .modal -->
 
 </div>
