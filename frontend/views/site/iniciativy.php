@@ -12,34 +12,32 @@ $this->title = ' - Инициативы';
 $this->params['alias'] = 'iniciativy';
 
 ?>
-<div class="pt-15 pb-30">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 col-lg-auto">
-                <div class="row align-items-center">
-                    <div class="col-auto">
-                        <h1 class="page-title em-23 em-sm-36">ИНИЦИАТИВЫ</h1>
-                    </div><!-- .col -->
-                    <div class="col-auto">
-                        <img class="d-block mt-15" height="36" src="/img/logo-rf.svg">
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .col -->
-            <div class="col-12 col-lg">
-                <h3 class="text em-11">
-                    <span class="fw-700">Рыбаков Фонд</span> – частная семейная филантропическая организация, основанная Игорем и Екатериной Рыбаковыми в 2015 году для влияния на социально-образовательные экосистемы людей.
-                </h3>
-                <h3 class="text em-11">
-                    <span class="fw-700">Миссия фонда:</span> Сделать так, чтобы каждому человеку в мире стала доступна своя внутренняя энергия преобразования.
-                </h3>
-            </div><!-- .col -->
-        </div><!-- .row -->
-    </div><!-- .container -->
-</div>
+<div class="container pt-15 pb-30">
+    <div class="row align-items-center">
+        <div class="col-12 col-lg-auto">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <h1 class="page-title em-23 em-sm-36">ИНИЦИАТИВЫ</h1>
+                </div><!-- .col -->
+                <div class="col-auto">
+                    <img class="d-block mt-15" height="36" src="/img/logo-rf.svg">
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .col -->
+        <div class="col-12 col-lg">
+            <h3 class="text em-11">
+                <span class="fw-700">Рыбаков Фонд</span> – частная семейная филантропическая организация, основанная Игорем и Екатериной Рыбаковыми в 2015 году для влияния на социально-образовательные экосистемы людей.
+            </h3>
+            <h3 class="text em-11">
+                <span class="fw-700">Миссия фонда:</span> Сделать так, чтобы каждому человеку в мире стала доступна своя внутренняя энергия преобразования.
+            </h3>
+        </div><!-- .col -->
+    </div><!-- .row -->
+</div><!-- .container -->
 
 <div class="row no-gutters flex-grow-1">
     <div class="col-12 col-sm-6 col-lg-3">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-12">
                 <div class="overlay bg-pro" style="background-image: url('/img/pro-1.jpg');">
                     <div class="overlay-content white">
@@ -100,7 +98,7 @@ $this->params['alias'] = 'iniciativy';
         </div><!-- .overlay -->
     </div><!-- .col -->
     <div class="col-12 col-sm-6 col-lg-3">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-12">
                 <div class="overlay bg-pro" style="background-image: url('/img/pro-4.jpg');">
                     <div class="overlay-content white">
@@ -161,7 +159,7 @@ $this->params['alias'] = 'iniciativy';
         </div><!-- .overlay -->
     </div><!-- .col -->
     <div class="col-12 col-sm-6 col-lg-3">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-12">
                 <div class="overlay bg-pro" style="background-image: url('/img/pro-7.jpg');">
                     <div class="overlay-content white">
@@ -222,7 +220,7 @@ $this->params['alias'] = 'iniciativy';
         </div><!-- .overlay -->
     </div><!-- .col -->
     <div class="col-12 col-sm-6 col-lg-3">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-12">
                 <div class="overlay bg-pro" style="background-image: url('/img/pro-10.jpg');">
                     <div class="overlay-content white">
@@ -264,7 +262,7 @@ $this->params['alias'] = 'iniciativy';
         </div><!-- .row -->
     </div><!-- .col -->
     <div class="col-12 col-sm-6 col-lg-3">
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-12">
                 <div class="overlay bg-pro" style="background-image: url('/img/pro-12.jpg');">
                     <div class="overlay-content white">

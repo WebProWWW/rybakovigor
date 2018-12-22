@@ -45,6 +45,10 @@ $('.js-powl').owlCarousel
     # responsive:
     #     576:
     #         nav: on
+.on 'changed.owl.carousel', (e) ->
+    $currentData = $ "#pslider-data-#{e.item.index}"
+    $('.js-pslider-data').addClass 'd-none'
+    $currentData.removeClass 'd-none'
 
 
 #$('.js-bxslider').bxSlider

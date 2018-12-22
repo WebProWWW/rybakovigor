@@ -5,6 +5,8 @@
  * 2018-12-19 02:40
  */
 
+use frontend\widgets\SocWidget;
+
 /**
  * @var $this \yii\web\View
  */
@@ -68,7 +70,7 @@ $this->params['alias'] = 'index';
         </div><!-- .col -->
         <div class="col-12 mt-auto">
             <div class="block">
-                <?= $this->render('-soc') ?>
+                <?= SocWidget::widget(['data'=>$socArr]) ?>
             </div><!-- .block -->
         </div><!-- .col -->
     </div><!-- .row -->

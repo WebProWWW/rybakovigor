@@ -12,6 +12,7 @@ use yii\db\ActiveRecord;
  * @property int $order
  * @property string $name
  * @property string $alias
+ * @property string $tpl
  *
  * @property Product[] $products
  */
@@ -32,8 +33,8 @@ class Category extends \yii\db\ActiveRecord
     {
         return [
             [['order'], 'integer'],
-            [['name', 'alias'], 'required'],
-            [['name', 'alias'], 'string', 'max' => 255],
+            [['name', 'alias', 'tpl'], 'required'],
+            [['name', 'alias', 'tpl'], 'string', 'max' => 255],
         ];
     }
 
@@ -47,6 +48,7 @@ class Category extends \yii\db\ActiveRecord
             'order' => 'Order',
             'name' => 'Name',
             'alias' => 'Alias',
+            'tpl' => 'Шаблон',
         ];
     }
 
@@ -55,7 +57,7 @@ class Category extends \yii\db\ActiveRecord
      */
     public function getProducts()
     {
-        return $this->hasMany(Product::className(), ['catid' => 'id']);
+        return $this->hasMany(Product::class, ['catid' => 'id']);
     }
 
     /**

@@ -59,11 +59,15 @@
     navElement: 'div',
     items: 1,
     loop: false
-  });
-
   // responsive:
   //     576:
   //         nav: on
+  }).on('changed.owl.carousel', function(e) {
+    var $currentData;
+    $currentData = $(`#pslider-data-${e.item.index}`);
+    $('.js-pslider-data').addClass('d-none');
+    return $currentData.removeClass('d-none');
+  });
 
   //$('.js-bxslider').bxSlider
   //    pager: off

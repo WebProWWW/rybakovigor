@@ -64,7 +64,7 @@ class Product extends \yii\db\ActiveRecord
      */
     public function getCat()
     {
-        return $this->hasOne(Category::className(), ['id' => 'catid']);
+        return $this->hasOne(Category::class, ['id' => 'catid']);
     }
 
     /**
@@ -72,7 +72,7 @@ class Product extends \yii\db\ActiveRecord
      */
     public function getProductSizes()
     {
-        return $this->hasMany(ProductSize::className(), ['product_id' => 'id']);
+        return $this->hasMany(ProductSize::class, ['product_id' => 'id']);
     }
 
     /**

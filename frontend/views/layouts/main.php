@@ -130,7 +130,7 @@ function active($alias, $current)
                 <div class="block">
                     <div class="row">
                         <div class="col-auto">
-                            <img class="re-img" width="100" height="100" src="img/re-1.jpg">
+                            <img class="re-img" width="100" height="100" src="/img/re-1.jpg">
                         </div>
                         <div class="col">
                             <p class="text lh-15">Игорь Рыбаков глубоко погружен в проблемы и задачи филантропии и инвестиций с социальным эффектом. В его книге вы найдете источник вдохновения</p>
@@ -144,7 +144,7 @@ function active($alias, $current)
                 <div class="block">
                     <div class="row">
                         <div class="col-auto">
-                            <img class="re-img" width="100" height="100" src="img/re-2.jpg">
+                            <img class="re-img" width="100" height="100" src="/img/re-2.jpg">
                         </div>
                         <div class="col">
                             <p class="text lh-15">Создатель уникальной компании глобального уровня Игорь Рыбаков делится в этой книге своим опытом. Стремящийся достичь успеха должен прочесть эту книгу</p>
@@ -158,7 +158,7 @@ function active($alias, $current)
                 <div class="block">
                     <div class="row">
                         <div class="col-auto">
-                            <img class="re-img" width="100" height="100" src="img/re-3.jpg">
+                            <img class="re-img" width="100" height="100" src="/img/re-3.jpg">
                         </div>
                         <div class="col">
                             <p class="text lh-15">Очень сильные размышления об особенностях предпринимательского мировосприятия. Многие из них абсолютно не интуитивны и сильно отличаются от общепринятых представлений</p>
@@ -172,7 +172,7 @@ function active($alias, $current)
                 <div class="block">
                     <div class="row">
                         <div class="col-auto">
-                            <img class="re-img" width="100" height="100" src="img/re-4.jpg">
+                            <img class="re-img" width="100" height="100" src="/img/re-4.jpg">
                         </div>
                         <div class="col">
                             <p class="text lh-15">Эта книга еще раз подтверждает: выпускники Физтеха обладают особым складом ума и способны подчинять мир новым законам, которые они же только что и открыли</p>

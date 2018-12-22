@@ -24,7 +24,24 @@ i
     vertical-align middle
     line-height 1
 
-
+table
+    margin 15px 0 0
+    width 100%
+    text-align center
+    border-collapse collapse
+    tr
+        td, th
+            padding 7px
+            // border-bottom 1px solid gray
+            &:first-child
+                text-align left
+    tbody
+        tr
+            &:nth-child(odd)
+                background #eee
+            &:last-child
+                td, th
+                    border-bottom none
 
 .content
     mpd(0, 65px 0 0, flex)

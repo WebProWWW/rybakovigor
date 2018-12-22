@@ -19,6 +19,7 @@ class m181219_174747_install extends Migration
             'order'  => $this->integer()->defaultValue(0),
             'name'   => $this->string()->notNull(),
             'alias'  => $this->string()->notNull(),
+            'tpl'    => $this->string()->notNull(),
         ], $this->options);
 
         $this->createIndex('idx-category-order','category','order');
@@ -80,15 +81,15 @@ class m181219_174747_install extends Migration
             ['6','i-telegram-plane','https://t-do.ru/rybakovigor'],
         ]);
 
-        $this->batchInsert('category', ['id','order','alias','name'], [
-            ['1','1','futbolki','Футболки'],
-            // ['2','2','tolstovki','Толстовки'],
-            ['3','3','knigi','Книги'],
-            ['4','4','postery','Постеры'],
-            ['5','5','znachki','Значки'],
-            ['6','6','stikery','Стикеры '],
-            ['7','7','ir-digital','!R Digital'],
-            ['8','8','air-force','A!R Force'],
+        $this->batchInsert('category', ['id','order','alias','name','tpl'], [
+            ['1','1','futbolki','Футболки','cat-products-a'],
+            // ['2','2','tolstovki','Толстовки',''],
+            ['3','3','knigi','Книги','cat-products-b'],
+            ['4','4','postery','Постеры','cat-products-c'],
+            ['5','5','znachki','Значки','cat-products-d'],
+            ['6','6','stikery','Стикеры ','cat-products-d'],
+            ['7','7','ir-digital','!R Digital','cat-products-a'],
+            ['8','8','air-force','A!R Force','cat-products-d'],
         ]);
 
         $this->batchInsert('product', ['catid','order','name','desc','price', 'img'], [
@@ -110,11 +111,11 @@ class m181219_174747_install extends Migration
             ['4','6','Постер "Повышай планку"','','1890','/img/product/5-6.jpg'],
             ['4','7','Постер "Быстрая Рыба"','','1890','/img/product/5-7.jpg'],
             // ЗНАЧКИ
-            ['5','1','Набор значков с символикой !R','','1790','/img/product/6-1.jpg'],
+            ['5','1','Набор значков с символикой !R','Эмалированные металлические значки с моими основными символами-двигателями.','1790','/img/product/6-1.jpg'],
             // СТИКЕРЫ
-            ['6','1','Набор стартапера','','990','/img/product/6-2.jpg'],
-            ['6','2','Набор миллионера','','1590','/img/product/6-2.jpg'],
-            ['6','3','Набор миллиардера','','2990','/img/product/6-2.jpg'],
+            ['6','1','Набор стартапера','Мой фирменный набор виниловых наклеек из 2-х листов А5 (21х15см)','990','/img/product/6-2.jpg'],
+            ['6','2','Набор миллионера','Мой фирменный набор виниловых наклеек из 2-х листов А5 (21х15см)','1590','/img/product/6-2.jpg'],
+            ['6','3','Набор миллиардера','Мой фирменный набор виниловых наклеек из 2-х листов А5 (21х15см)','2990','/img/product/6-2.jpg'],
             // !R DIGITAL
             ['7','1','!R Logo Digital','','1990','/img/product/3-1.jpg'],
             ['7','2','Digital Storm','','1990','/img/product/3-2.jpg'],
@@ -123,7 +124,7 @@ class m181219_174747_install extends Migration
             ['7','5','Reality Hacker','','1990','/img/product/3-5.jpg'],
             ['7','6','Набор из 5 футболок Digital','','7990','/img/product/3-6.jpg'],
             // A!R FORCE
-            ['8','1','Nike A!R Force 1','','17990','/img/product/6-3.jpg'],
+            ['8','1','Nike A!R Force 1','Эксклюзивная кастомизированная версия легендарных кроссовок','17990','/img/product/6-3.jpg'],
         ]);
     }
 
