@@ -78,7 +78,7 @@ class m181219_174747_install extends Migration
             ['3','i-instagram','https://www.instagram.com/rybakov_igor/'],
             ['4','i-twitter','https://twitter.com/rybakovigor'],
             ['5','i-youtube','https://www.youtube.com/channel/UCdOUvNFp8y6KTkswzeu7naQ/featured'],
-            ['6','i-telegram-plane','https://t-do.ru/rybakovigor'],
+            ['6','i-telegram-plane','https://tele.click/rybakovigor'],
         ]);
 
         $this->batchInsert('category', ['id','order','alias','name','tpl'], [
